@@ -38,7 +38,7 @@ User.hasMany(Vote, {
 });
 
 Post.hasMany(Vote, {
-  foreignKey: 'user_id'
+  foreignKey: 'post_id'
 });
 
 Comment.belongsTo(User, {
